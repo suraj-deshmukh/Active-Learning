@@ -13,9 +13,10 @@ def sliding_window(image):
             # yield (x, y, image[y:y + windowSize[1], x:x + windowSize[0]])
     return(tmp)
 
+#image dataset link:- http://lamda.nju.edu.cn/files/miml-image-data.rar
 
-target_path = "/home/suraj/Documents/suraj_backup/office_backup/miml-image-data/miml data.mat"
-image_path = "/home/suraj/Documents/suraj_backup/office_backup/miml-image-data/original"
+target_path = "miml-image-data/miml data.mat"
+image_path = "miml-image-data/original"
 
 Y = sio.loadmat(target_path)
 Y = Y['targets']
