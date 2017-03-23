@@ -9,10 +9,7 @@ x = f['x'].value
 y = f['y'].value
 f.close()
 
-
-
 x_train , x_test, y_train, y_test = train_test_split(x,y,test_size=0.2,random_state=100)
-
 
 def get_result(y_true,y_pred):
     total_correctly_predicted = len([i for i in range(len(y_true)) if (y_true[i]==y_pred[i]).sum() == 5])
@@ -21,7 +18,6 @@ def get_result(y_true,y_pred):
     print(total_correctly_predicted/400.)
     print("hamming loss")
     print(hamming_loss(y_true,y_pred))
-
 
 model = OneVsRestClassifier(SVC(),n_jobs=-1)
 
