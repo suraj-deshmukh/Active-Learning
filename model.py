@@ -44,9 +44,4 @@ for i in batch:
     print("New Dataset shape"+str(batch_x.shape))
     model.fit(batch_x,batch_y)
     y_pred = model.predict(x_test)
-    get_result(y_test,y_pred)   
-    
-    
-    
-    
-    
+    get_result(y_test,y_pred)
