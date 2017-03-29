@@ -18,4 +18,4 @@ Each image is represented by a feature vector using the method described in [Lea
 
 # Ipython Notebook
 
-https://github.com/suraj-deshmukh/Active-Learning/blob/master/notebook.ipynb
+[ipython notebook](https://github.com/suraj-deshmukh/Active-Learning/blob/master/notebook.ipynb)
